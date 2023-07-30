@@ -1,8 +1,8 @@
 class Attend < Formula
   desc "App that gives you high score for avoiding task switching"
-  version "0.0.10"
+  version "0.1.1"
   homepage "https://github.com/softwaredoug/attend"
-  url "https://github.com/softwaredoug/attend.git", :tag => "v0.0.10"
+  url "https://github.com/softwaredoug/attend.git", :tag => "v0.1.1"
   sha256 "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
 
   def install
@@ -11,14 +11,12 @@ class Attend < Formula
     # Move supporting scripts using libexec
     libexec.install "attend"
 
-    # Supporting scripts include 
-    #   idle.sh
-    #   focusedapp.scpt
-    #   log.sh
-    #   tada.mp3
+    # Install all *.sh
     libexec.install "idle.sh"
-    libexec.install "focusedapp.scpt"
     libexec.install "log.sh"
+    libexec.install "utils.sh"
+
+    libexec.install "focusedapp.scpt"
     libexec.install "tada.mp3"
 
     # Create symlink to attend.sh
