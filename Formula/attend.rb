@@ -4,10 +4,11 @@ class Attend < Formula
   homepage "https://github.com/softwaredoug/attend"
   url "https://github.com/softwaredoug/attend.git", :tag => "v0.1.4"
   sha256 "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+ 
+  depends_on "chrome-cli"
+  depends_on "jq"
 
   def install
-    depends_on "chrome-cli"
-    depends_on "jq"
 
     mv "attend.sh", "attend"
 
