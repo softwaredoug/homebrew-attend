@@ -1,8 +1,8 @@
 class Attend < Formula
   desc "App that gives you high score for avoiding task switching"
-  version "0.1.4"
+  version "0.2.2"
   homepage "https://github.com/softwaredoug/attend"
-  url "https://github.com/softwaredoug/attend.git", :tag => "v0.1.4"
+  url "https://github.com/softwaredoug/attend.git", :tag => "v0.2.2"
   sha256 "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
  
   depends_on "chrome-cli"
@@ -17,6 +17,8 @@ class Attend < Formula
 
     # Install all *.sh
     libexec.install "idle.sh"
+    libexec.install "calendar.sh"
+    libexec.install "fuzzy_date.sh"
     libexec.install "log.sh"
     libexec.install "utils.sh"
 
