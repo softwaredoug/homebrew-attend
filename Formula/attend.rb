@@ -7,6 +7,7 @@ class Attend < Formula
  
   depends_on "chrome-cli"
   depends_on "jq"
+  depends_on "coreutils"
 
   def install
 
