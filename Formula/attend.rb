@@ -1,8 +1,8 @@
 class Attend < Formula
   desc "App that gives you high score for avoiding task switching"
-  version "0.2.6"
+  version "0.3.0"
   homepage "https://github.com/softwaredoug/attend"
-  url "https://github.com/softwaredoug/attend.git", :tag => "v0.2.6"
+  url "https://github.com/softwaredoug/attend.git", :tag => "v0.3.0"
   sha256 "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
  
   depends_on "chrome-cli"
